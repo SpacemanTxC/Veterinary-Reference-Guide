@@ -21,4 +21,23 @@ function quizGenerator(questions, quizContainer, resultsContainer, submitButton)
       }
 
 // array will store the questions and correct answers
-var myQuestions = [];
+var myQuestions = [
+  {
+    question: "What is the capital of the USA?",
+    answers: {
+      a: "Austin",
+      b: "Seattle",
+      c: "DC"
+    },
+    correctAnswer: "c"
+  },
+    {
+      question: "What year was the USA formed?",
+      answers: {
+        a: "1999",
+        b: "1776",
+        c: "1864"
+      },
+      correctAnswer: "b"
+    }
+  ];
