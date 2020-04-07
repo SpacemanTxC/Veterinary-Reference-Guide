@@ -4,7 +4,34 @@
 function quizGenerator(questions, quizContainer, resultsContainer, submitButton){
 
       function displayQuiz(questions, quizContainer){
-          //code for the questions
+        // create 2 empty arrays
+          var output = [];
+          var answers = [];
+
+          //for loop for each question looking at the lenght
+          for(var i = 0; i < questions.length; i++ ){
+              //reset the answers for each try
+              answers = [];
+
+              //for each available answer to the question
+              for( letter in questions[i].answers){
+                // adds button
+                answers.push(
+                  '<label>'
+                    + '<input type="radio" name="question '+i+'" value="'+letter+'">'
+                    + letter + ': '
+                    + question[i].answers[letter]
+                  + '</label>'
+                );
+              }
+              //adds questin and answers to output
+              output.push(
+                '<div class="question">' + questions[i].questions + '</div>'
+                + '<div class="answers">' + answers.join('') +'</div>'
+              );
+          }
+          //changes the output to html to display 
+          quizContainer.innerHtml = output.join('');
       }
 
       function showResults(questions, quizContainer, resultsContainer){
