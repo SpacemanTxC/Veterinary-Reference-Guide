@@ -1,15 +1,36 @@
 import React from 'react';
 //import style
-import './photo_display';
+import './photo_display.css';
 
 // Photo app will display photos to be used as buttons
 // Phot app will display the main photo when clicked
 class Photo_display extends React.Component{
-  //render(){
+  //function to click image to change display
+  // renderImg(i){
   //   return(
-  //     // Add photo display
+  //     onClick ={}
   //   );
-  //}
+  // }
+
+  render(){
+    const testImg = require('../images/test_porg.jpeg');
+    return(
+      // Add photo display
+      // Test image works
+      <div>
+        <div className='board-row'>
+          <img src={testImg} />
+          <img src={testImg} />
+          <img src={testImg} />
+        </div>
+        <div className='board-row'>
+          <img src={testImg} />
+          <img src={testImg} />
+          <img src={testImg} />
+        </div>
+      </div>
+    );
+  }
 }
 
 // create function for image button click onClick()
