@@ -1,0 +1,6 @@
+/* Called after complied for title */
+.title_banner:after{
+  clear: both;
+  content: "";
+  display: table;
+}

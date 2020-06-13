@@ -8,7 +8,7 @@ class Head_banner extends React.Component{
     const head_banner = 'Veterinary Reference Guide';
       return(
         <div className='head_banner'>
-          <h1>{head_banner}</h1>
+          {head_banner}
         </div>
     );
   }
