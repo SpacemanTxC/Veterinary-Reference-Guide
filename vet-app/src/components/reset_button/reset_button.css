@@ -1,0 +1,8 @@
+button{
+  align-items: center;
+}
+
+.reset_button{
+  display: flex;
+  vertical-align: middle;
+}

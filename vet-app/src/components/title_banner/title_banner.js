@@ -7,9 +7,7 @@ import './title_banner.css';
 class Title_banner extends React.Component{
   render(){
     return(
-      <div>
         <div className='title_banner'>Empty Title of Diagnosis</div>
-      </div>
     );
   }
 }

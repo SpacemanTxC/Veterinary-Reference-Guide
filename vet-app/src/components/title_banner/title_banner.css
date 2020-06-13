@@ -1,3 +1,7 @@
+.title_banner{
+  background-color: #f27a0a;
+  text-align: center;
+}
 /* Called after complied for title */
 .title_banner:after{
   clear: both;

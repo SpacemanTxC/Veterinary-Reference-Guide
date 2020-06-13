@@ -1,5 +1,11 @@
+.head_banner{
+  background-color: #f27a0a;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
+}
+
 .head_banner:after{
   clear: both;
-  content: "";
-  display: table;
+  display: flex;
 }

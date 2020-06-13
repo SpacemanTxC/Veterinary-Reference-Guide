@@ -17,14 +17,16 @@ class Photo_display extends React.Component{
     return(
       // Add photo display
       // Test image works
-      <div>
+      <div className='image-row'>
         <div className='board-row'>
-          <img src={testImg} />
           <img src={testImg} />
           <img src={testImg} />
         </div>
         <div className='board-row'>
           <img src={testImg} />
+          <img src={testImg} />
+        </div>
+        <div className='board-row'>
           <img src={testImg} />
           <img src={testImg} />
         </div>

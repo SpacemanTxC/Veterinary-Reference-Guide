@@ -1,7 +1,5 @@
 /* Creates row for images  */
-/* Make images spread acrosse the page */
-.board-row:after {
-  clear: both;
-  content: "";
+.board-row {
   display: table;
+  clear: right;
 }

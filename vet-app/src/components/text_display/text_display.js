@@ -1,7 +1,7 @@
 import React from 'react';
 //import style
 import './text_display.css';
-//IMPORT Reset button into text component
+//import Reset button into text component
 import Reset_button from '../reset_button/reset_button.js';
 
 //Text display will display the text and change the text based
@@ -20,7 +20,7 @@ class Text_display extends React.Component{
         non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
         voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."`;
     return(
-        <div>
+        <div className='text_reset-container'>
           <div className ='text_display'>{display_text}</div>
           <div clasName ='reset_button'><Reset_button /></div>
         </div>
