@@ -21,7 +21,7 @@ class Reset_button extends React.Component{
       // Add Reset button here
         <div className= 'reset_button'>
           <button onClick={this.activateReset}>
-              Reset
+              Reset Guide
           </button>
         </div>
 

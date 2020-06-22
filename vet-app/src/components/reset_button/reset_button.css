@@ -1,8 +1,10 @@
 button{
   align-items: center;
+  border-radius: 35%;
 }
 
 .reset_button{
   display: flex;
-  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
 }
