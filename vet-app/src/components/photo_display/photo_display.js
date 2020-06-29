@@ -2,41 +2,46 @@ import React from 'react';
 //import style
 import './photo_display.css';
 
+// new to be local for component
+let vetCPRRef = require('../images/vet_cpr.jpg');
+let tapeWormImgRef = require('../images/tapeworm.jpg');
+let whipWormImgRef = require('../images/whipworm.jpg');
+let roundWormImgRef = require('../images/roundworm.jpg');
+let coccidiaImgRef = require('../images/coccidia.jpg');
+let hookWormImgRef = require('../images/hookworm.jpg');
 // Photo app will display photos to be used as buttons
 // Phot app will display the main photo when clicked
 class Photo_display extends React.Component{
   //function to click image to change display
-  // renderImg(i){
-  //   return(
-  //     onClick ={}
-  //   );
-  // }
-
+  //componentDidMount use to set new state on click
+  constructor(){
+    super();
+    this.state={
+      vetCPR: vetCPRRef,
+      tapeWormImg: tapeWormImgRef,
+      whipWormImg: whipWormImgRef,
+      roundWormImg: roundWormImgRef,
+      coccidiaImg: coccidiaImgRef,
+      hookWormImg: hookWormImgRef
+    }
+  }
   render(){
     // add function to get photo from db
-    const vetCPR = require('../images/vet_cpr.jpg');
-    const tapeWormImg =require('../images/tapeworm.jpg');
-    const whipWormImg =require('../images/whipworm.jpg');
-    const roundWormImg =require('../images/roundworm.jpg');
-    const coccidiaImg =require('../images/coccidia.jpg');
-    const hookWormImg =require('../images/hookworm.jpg');
-    // const image6 =require('../images/');
-
     return(
       // Add photo display
       // Test image works
       <div className='image-row'>
         <div className='board-row'>
-          <img src={vetCPR} />
-          <img src={tapeWormImg} />
+          <img src={this.state.vetCPR} />
+          <img src={this.state.tapeWormImg} />
         </div>
         <div className='board-row'>
-          <img src={whipWormImg} />
-          <img src={roundWormImg} />
+          <img src={this.state.whipWormImg} />
+          <img src={this.state.roundWormImg} />
         </div>
         <div className='board-row'>
-          <img src={coccidiaImg} />
-          <img src={hookWormImg} />
+          <img src={this.state.coccidiaImg} />
+          <img src={this.state.hookWormImg} />
         </div>
       </div>
     );

@@ -1,4 +1,5 @@
 /* Creates row for images  */
+/* Change to flex box images  */
 .board-row {
   display: table;
   clear: right;

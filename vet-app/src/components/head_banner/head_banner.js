@@ -4,11 +4,16 @@ import './head_banner.css'
 
 //Head banner will display the banner at the top of the app
 class Head_banner extends React.Component{
+  constructor(){
+    super();
+    this.state ={
+      head_banner:'Veterinary Reference Guide'
+    }
+  }
   render(){
-    const head_banner = 'Veterinary Reference Guide';
       return(
         <div className='head_banner'>
-          {head_banner}
+          {this.state.head_banner}
         </div>
     );
   }

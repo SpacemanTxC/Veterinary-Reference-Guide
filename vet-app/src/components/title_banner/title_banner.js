@@ -5,9 +5,15 @@ import './title_banner.css';
 //Title banner will display the name of the step/diagnosis
 //Name will change with reset button or new photo button
 class Title_banner extends React.Component{
+  constructor(){
+    super();
+    this.state={
+      title_banner: 'Name of Diagnosis: HERE'
+    }
+  }
   render(){
     return(
-        <div className='title_banner'>Empty Title of Diagnosis</div>
+        <div className='title_banner'>{this.state.title_banner}</div>
     );
   }
 }

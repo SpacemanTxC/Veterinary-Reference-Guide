@@ -4,6 +4,12 @@ import './reset_button.css';
 
 //Reset button will reset the text and photo to main menu to default
 class Reset_button extends React.Component{
+  constructor(){
+    super();
+    this.state={
+      resetOn: false,
+    }
+  }
   // set state of reset button
   // constructor(props){
   //   super(props);
@@ -11,8 +17,9 @@ class Reset_button extends React.Component{
   // }
   //change state
     activateReset(){
-      // if(isResetOn){
-      //   this.props.isResetOn =  false;
+      //use the state to activate button with boolean
+      // this.setState= {
+      //   resetOn: true,
       // }
       console.log("TEST TEST: Actitvate reset");
     }
