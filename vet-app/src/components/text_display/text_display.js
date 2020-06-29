@@ -3,10 +3,11 @@ import React from 'react';
 import './text_display.css';
 //import Reset button into text component
 import Reset_button from '../reset_button/reset_button.js';
-
+import firestore from "./firestore";
 //Text display will display the text and change the text based
 //on which photo is clicked or if reset button is clicked
 class Text_display extends React.Component{
+  constructor(){}
   render(){
         const display_text ="Veterinary Web Reference Guide: Directions";
         const display_text2 ="First: Click Image of diagnosis, disease, & Medical information.";

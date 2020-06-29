@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+
 // import style
 import './index.css';
 //import components
@@ -12,7 +13,8 @@ import Photo_display from './components/photo_display/photo_display.js'
 import Text_display from './components/text_display/text_display.js'
 import Title_banner from'./components/title_banner/title_banner.js'
 
-// JS File Here
+
+// let vetapp = firebase.datebase();
 //App
 class App extends React.Component {
   //What will be displayed
