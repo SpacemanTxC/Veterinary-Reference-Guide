@@ -1,6 +1,20 @@
 /* Creates row for images  */
 /* Change to flex box images  */
-.board-row {
-  display: table;
+.board-row1{
+  display: flex;
   clear: right;
+  flex-grow: 1;
+}
+.board-row2{
+  display: flex;
+  clear: right;
+  flex-grow: 1;
+}
+.board-row3{
+  display: flex;
+  clear: right;
+  flex-grow: 1;
+}
+img:hover{
+  opacity: .3;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Title_banner from '../title_banner/title_banner';
 //import style
 import './photo_display.css';
 
@@ -31,15 +32,17 @@ class Photo_display extends React.Component{
       // Add photo display
       // Test image works
       <div className='image-row'>
-        <div className='board-row'>
+        <div className='board-row1'>
           <img src={this.state.vetCPR} />
-          <img src={this.state.tapeWormImg} />
+          <img src={this.state.tapeWormImg} alt='Tape Worm' />
         </div>
-        <div className='board-row'>
+
+        <div className='board-row2'>
           <img src={this.state.whipWormImg} />
           <img src={this.state.roundWormImg} />
         </div>
-        <div className='board-row'>
+
+        <div className='board-row3'>
           <img src={this.state.coccidiaImg} />
           <img src={this.state.hookWormImg} />
         </div>

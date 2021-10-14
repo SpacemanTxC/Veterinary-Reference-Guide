@@ -11,4 +11,9 @@ img{
     max-height: 100%;
     object-fit: cover;
     vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow:1;
+    flex-shrink: 3;
   }
